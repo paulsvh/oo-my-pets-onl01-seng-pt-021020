@@ -21,7 +21,7 @@ class Owner
   end
 
   def reset_all
-    @@all.clear
+    self.all.clear
   end
 
   def cats #iterates through all owner.cats and returns them in array
