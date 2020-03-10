@@ -36,7 +36,6 @@ class Owner
 
   def buy_cat(name) #makes new cat with name argument and assigns to this owner
     Cat.new(name, self)
-    binding.pry
   end
 
   def buy_dog(name) #makes new dog with name argument and assigns to this owner
