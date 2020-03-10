@@ -20,7 +20,7 @@ class Owner
     @@all.length
   end
 
-  def reset_all
+  self.reset_all
     self.all.clear
   end
 
