@@ -41,7 +41,7 @@ class Owner
   end
 
   def walk_dogs #changes all of this owners dogs moods to "happy"
-
+    self.dogs.each{|dog| dog.mood = "happy"}
   end
 
   def feed_cats #changes all of this owners cats moods to "happy"
