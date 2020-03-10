@@ -45,7 +45,7 @@ class Owner
   end
 
   def feed_cats #changes all of this owners cats moods to "happy"
-
+    self.cats.each{|cat| cat.mood = "happy"}
   end
 
   def sell_pets #removes the pet from this owner (setting their owner to nil) and resets their mood to "nervous".
