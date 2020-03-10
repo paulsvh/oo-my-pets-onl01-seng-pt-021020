@@ -39,7 +39,7 @@ class Owner
   end
 
   def buy_dog(name) #makes new dog with name argument and assigns to this owner
-
+    Dog.new(name, self)
   end
 
   def walk_dogs #changes all of this owners dogs moods to "happy"
