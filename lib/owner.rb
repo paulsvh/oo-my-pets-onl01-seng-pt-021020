@@ -49,7 +49,8 @@ class Owner
   end
 
   def sell_pets #removes the pet from this owner (setting their owner to nil) and resets their mood to "nervous".
-
+    self.dogs.each{|dog| dog.owner = nil && dog.mood = "nervous"}
+    self.cats.each{|cat| cat.owner = nil && cat.mood = "nernous"}
   end
 
   def list_pets #puts a list "I have #{@owner.dogs.count} dog(s), and #{@owner.cats.count} cat(s)."
