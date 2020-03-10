@@ -1,6 +1,7 @@
 require 'pry'
 class Cat
-  attr_accessor :name, :owner, :mood
+  attr_accessor :owner, :mood
+  attr_reader :name
 
   @@all = []
 
